@@ -10,6 +10,7 @@ import {
   Settings,
   Users,
   CreditCard,
+  AddressBook,
 } from "lucide-react";
 import {
   Collapsible,
@@ -29,6 +30,11 @@ const sections: { title: string; items: NavItem[] }[] = [
     title: "Platform",
     items: [
       { label: "Overview", href: "/dashboard", icon: Home },
+      {
+        label: "Contacts",
+        href: "/dashboard/contacts",
+        icon: AddressBook,
+      },
       {
         label: "Feature",
         href: "/dashboard/feature",
