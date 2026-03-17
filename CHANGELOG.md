@@ -20,4 +20,15 @@
 - content/home.ts  
 - components/layout/navbar.tsx  
 - components/home/LayoutFooterSection.tsx  
-- CHANGELOG.md
+- CHANGELOG.md  
+
+## 2024-06-09
+- Added tenant-scoped contacts table in Drizzle schema for CRM Contacts feature.
+- Updated migration journal for contacts table.
+- Added Contacts navigation entry in dashboard sidebar (AddressBook icon).
+- Contacts CRUD routes and dashboard scaffolding planned.
+
+**Files updated**:
+- lib/db/schema.ts
+- drizzle/meta/_journal.json
+- components/dashboard/sidebar-nav.tsx
