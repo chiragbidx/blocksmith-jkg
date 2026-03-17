@@ -32,3 +32,9 @@
 - lib/db/schema.ts
 - drizzle/meta/_journal.json
 - components/dashboard/sidebar-nav.tsx
+
+## 2024-06-09
+- Fixed bug: AddressBook icon import for Contacts sidebar nav did not exist in lucide-react. Replaced with valid Contact icon.
+  
+**Files updated**:
+- components/dashboard/sidebar-nav.tsx
