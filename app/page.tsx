@@ -46,13 +46,11 @@ export default async function Home() {
     .filter(([id]) => !hide.has(id));
 
   return (
-    <div className="home-dark min-h-screen bg-gradient-to-b from-zinc-50 via-white to-[#ffe6d8] text-zinc-900 transition-colors dark:from-[#120d0b] dark:via-[#16100d] dark:to-[#1f1612] dark:text-[#f7efe8]">
+    <div className="home-dark min-h-screen bg-gradient-to-b from-zinc-50 via-white to-[#faf5f0] text-zinc-900 transition-colors dark:from-[#120d0b] dark:via-[#16100d] dark:to-[#1f1612] dark:text-[#f7efe8]">
       <LayoutNavbar isLoggedIn={!!session} />
       <main className="flex min-h-screen w-full flex-col gap-12 px-6 py-12 sm:px-10 lg:px-16 lg:max-w-[1600px] lg:mx-auto">
         {visibleSections.map(([, node]) => node)}
       </main>
-
-      {/* lightweight animations defined locally to avoid tailwind config changes */}
       <style>{`
         @keyframes float {
           0% { transform: translateY(0px); }
