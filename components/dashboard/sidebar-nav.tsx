@@ -10,7 +10,7 @@ import {
   Settings,
   Users,
   CreditCard,
-  AddressBook,
+  Contact, // Fixed: Use Contact icon, as AddressBook does not exist in lucide-react
 } from "lucide-react";
 import {
   Collapsible,
@@ -33,7 +33,7 @@ const sections: { title: string; items: NavItem[] }[] = [
       {
         label: "Contacts",
         href: "/dashboard/contacts",
-        icon: AddressBook,
+        icon: Contact,
       },
       {
         label: "Feature",
