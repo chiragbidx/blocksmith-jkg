@@ -23,7 +23,7 @@ export const LayoutFooterSection = () => {
               <h3 className="font-bold text-lg">{column.heading}</h3>
               {column.links.map((link) => (
                 <div key={link.label}>
-                  <Link href={link.href} className="opacity-60 hover:opacity-100">
+                  <Link href={link.href} className="opacity-60 hover:opacity-100" target={link.href.startsWith('http') ? "_blank" : undefined} rel={link.href.startsWith('http') ? "noopener noreferrer" : undefined}>
                     {link.label}
                   </Link>
                 </div>
